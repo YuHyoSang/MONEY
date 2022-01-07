@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 public class TestMapperTest {
 	private Logger log = LogManager.getLogger(TestMapperTest.class);
 	
 	@Autowired
 	TestMapper testMapper;
 	
-	@Test
+//	@Test
 	public void test() throws Exception {
 		String time = testMapper.getDatabaseTime();
 		log.info("######################### time : " + time);
